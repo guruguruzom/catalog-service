@@ -16,13 +16,13 @@ public class CatalogEntity implements Serializable {
     private Long id;
 
     @Column(nullable = false, length = 120, unique = true)
-    private String product_id;
+    private String productId;
     @Column(nullable = false)
-    private String product_name;
+    private String productName;
     @Column(nullable = false)
     private Integer stock;
     @Column(nullable = false)
-    private Integer unit_price;
+    private Integer unitPrice;
 
     @Column(nullable = false, updatable = false, insertable = false)
     @ColumnDefault(value = "CURRENT_TIMESTAMP")
